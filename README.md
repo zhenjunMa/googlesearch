@@ -72,6 +72,8 @@ from googlesearch import search
 proxy = 'http://username:password@proxy.host.com:8080/'
 # or for socks5
 # proxy = 'socks5://username:password@proxy.host.com:1080/'
+# Use socks5h:// if you want DNS resolution to happen through the SOCKS5 proxy, ensuring better privacy and avoiding DNS leakage.
+# proxy = 'socks5h://username:password@proxy.host.com:1080/'   
 
 j = search("proxy test", num_results=100, lang="en", proxy=proxy, ssl_verify=False)
 for i in j:
